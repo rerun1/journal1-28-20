@@ -16,7 +16,7 @@ function displayAllMethods(journalToDisplay){
     var teaser = entry.getTeaser();
     var words = entry.countWords();
     var vowelsConsonants = entry.countVowelsConsonants();
-    htmlForMethodsList += "<li><em>"+teaser+"</em><br>"+words+"<br>"+vowelsConsonants+"</li>";
+    htmlForMethodsList += "<li class='mb-4'><em>"+teaser+"</em><br>"+words+"<br>"+vowelsConsonants+"</li>";
   });
   methodsList.html(htmlForMethodsList);
 }

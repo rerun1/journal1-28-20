@@ -9,15 +9,14 @@
     <div class="container">
       <h1 class="mt-3 mb-3">Daily Journal</h1>
       <form id="journalEntry">
-        <div class="form-group">
-          <label for="entryTitle">Enter Date of Journal Entry</label>
-          <input type="text" id="entryTitle">
+        <input type="date" id="entryTitle" class="mb-4">
+        <div class="input-group input-group-lg">
+          <div class="input-group-prepend">
+            <span class="input-group-text">Day's Highlights</span>
+          </div>
+          <textarea class="form-control" aria-label="Hightlights of My Day" id="entryBody"></textarea>
         </div>
-        <div class="form-group">
-          <label for="entryBody">What Happened Today?</label>
-          <input type="text" id="entryBody">
-        </div>
-        <button type="submit" class="btn btn-primary mb-3">Record Entry</button>
+        <button type="submit" class="btn btn-primary mt-4 mb-4">Record Entry</button>
       </form>
       <ul id="journalEntryTeasers">
       </ul>
