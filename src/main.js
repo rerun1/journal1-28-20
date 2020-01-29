@@ -1,5 +1,10 @@
+import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './styles.css';
+import $ from 'jquery';
 import { Journal } from './journal';
 import { Entry } from './entry';
+
 
 // User interface
 var journal = new Journal();
